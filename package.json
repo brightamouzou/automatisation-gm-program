@@ -1,0 +1,17 @@
+{
+  "name": "automatisation_programme_gm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "html-pdf-node": "^1.0.8",
+    "puppeteer": "^19.2.2"
+  }
+}

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('fonts/sinkinsans-400regular-webfont.woff2') format('woff2'),
+         url('fonts/sinkinsans-400regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    color: black;
+    text-align: left;
+}
+
+body{
+	font-family:'sinkin_sans400_regular' ;
+	background:url("images/montagne.png") fixed no-repeat;
+	background-size:cover;
+	margin: 0px;
+	padding: 0px;
+ }
+
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background:rgb(163, 163, 163);
+	box-sizing: border-box;
+	box-shadow: 2px 2px 3px rgba(219, 219, 219, 0.6);
+	width: 400px;
+	padding: 40px;
+	border-radius:10px ;
+
+}
+
+.box h2{
+	text-align: center;
+	margin:0 0 30px 0;
+	padding: 0;
+	color: rgba(0,0,0,0.9);
+}
+
+
+.box .input-box{
+	position: relative;
+}
+
+.box .input-box input, .box .input-box select{
+	padding:10px 10px;
+	width:100%; 
+	letter-spacing:1px;
+	background:transparent;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	border-bottom: solid 1px ;
+	font-size: 16px;
+	color: #fff
+}
+
+.fs-13{
+    font-size: 12px;
+    /* font-weight: 13px; */
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.d-block{
+    display: block;
+}
+ .box .input-box label:not(.spA){
+ 	padding: 10px 0;
+ 	letter-spacing: 1px;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	transition: 0.5s
+ }
+
+.box .input-box input:focus~label,
+.box .input-box input:valid~label,
+.box .input-box select:focus~label,
+.box .input-box select:valid~label{
+	top:-18px;
+	left: 0;
+	/* color: rgb(55,214,245); */
+    color: black;
+	font-size: 11px;
+
+
+}
+
+
+.box input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background:#227be3;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+    height: auto;
+
+}
+
+.box .last{
+	font-size: 12px;
+	color:#fff;
+}
+
+.box .last .sign_up{
+	text-decoration: underline;
+	font-style: bold;
+	color: rgb(55,214,245);
+	cursor: pointer;
+}
+
+
+
+

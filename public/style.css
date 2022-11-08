@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap');
+.d-flex{
+    display: flex;
+}
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.btn{
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary{
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.d-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-min{
+    width: fit-content;
+    margin: auto;
+}
+
+.w-full-screen{
+    /* overflow: hidden; */
+    width: 100vw;
+}
+.m-auto{
+    margin: auto;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.text-danger{
+    color: rgba(207, 0, 0, 0.904);
+}
+
+.text-warning{
+    color: rgb(136, 97, 24);
+}
+.text-success{
+    color: green;
+}
+
+table{
+    border-collapse: collapse;
+
+}
+
+.mb-5{
+    margin-bottom: 15px;
+}
+th{
+    background: rgb(8, 12, 71);
+    color: white;
+}
+
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.align-center{
+    align-items: center;
+}
+.head-items{
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+*{
+    text-align: center;
+}
+header img{
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+}
+
+.invisible{
+    display: none;
+}
+
+td, th{
+    /* padding: 5px; */
+    border: 1px solid black;
+}
+
+div[contenteditable="true"]{
+    padding: 5px;
+}
+input[type='text'], textarea{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 12;
+}
+
+textarea{
+    /* height: auto; */
+    word-wrap: break-word;
+}
+
+.g-5{
+    gap: 15px;
+}
+
+.my-5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.d-block{
+    display: block;
+}
+tr.divider{
+    /* background: rgb(248, 176, 43); */
+    /* height: 3px; */
+    /* position: relative; */
+    border: 2px solid rgb(136, 97, 24);
+}
+
+tr.divider div{
+    
+}
+/* tr.divider::before{
+    position: absolute;
+    inset: 0;
+    background: rgb(248, 176, 43);
+
+} */
+
+@media(max-width:768px){
+    table{
+        max-width: 767px;
+        overflow: auto;
+    }
+}

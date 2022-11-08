@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+    
+        <h2>Informations de programme</h2>
+    
+        <form method="get" action="/result" autocomplete="off" name="infosForm" required>
+    
+            <div class="input-box">
+                <!-- <input type="text" name="month"> -->
+
+                <select name="month" id="month">
+                    <option value="0">Janvier</option>
+                    <option value="1">Février</option>
+                    <option value="2">Mars</option>
+                    <option value="3">Avril</option>
+                    <option value="4">Mai</option>
+                    <option value="5">Juin</option>
+                    <option value="6">Juillet</option>
+                    <option value="7">Aout</option>
+                    <option value="8">Septembre</option>
+                    <option value="9">Octobre</option>
+                    <option value="10">Novembre</option>
+                    <option value="11">Décembre</option>
+                </select>
+                <!-- <label for="year">Année</label> -->
+
+                <label for="month">Mois</label>
+            </div>
+    
+            <div class="input-box">
+                <input type="number" value="2022" name="year">
+                <label for="year" >Année</label>
+            </div>
+    
+            <!-- <div class="input-box">
+                <input type="number" name="nbSpA">
+                <label for="">Nombre de réveils</label>
+            </div> -->
+            
+            <label class="fs-13 mb-5 text-left d-block" for="">Semaines de reveil</label>
+            <div class="input-box d-flex text-left">
+                            <!-- <input type="checkbox" id="spA1" value="1" name="spritualAwekeningWeek"> -->
+                            <input type="checkbox" id="spA1" value="0" name="spiritualAwakeningWeeks">
+                            <label class="spA" for="spA1">1</label>
+                            <input type="checkbox" id="spA2" value="1" name="spiritualAwakeningWeeks">
+                            <label class="spA" for="spA2">2</label>
+
+                            <input type="checkbox" id="spA3" value="2" name="spiritualAwakeningWeeks">
+                            <label class="spA" for="spA3">3</label>
+
+                            <input type="checkbox" id="spA4" value="3" name="spiritualAwakeningWeeks">
+                            <label class="spA" for="spA4">4</label>
+
+                            <input type="checkbox"  checked id="spA5" value="4" name="spiritualAwakeningWeeks">
+                            <label class="spA" for="spA5">5</label>
+
+                            <!-- <input type="checkbox"  name="spritualAwekeningWeek"> -->
+                            <!-- <label for="">Semaines de reveils</label> -->
+                        </div>
+    
+
+            <input type="submit" value="Soumettre">
+    
+         
+        </form>
+    
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
