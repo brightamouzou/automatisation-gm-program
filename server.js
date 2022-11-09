@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 5000;
+const port = 5000||process.env.PORT;
 
 let options = {
   root: __dirname,
