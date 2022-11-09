@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 require("dotenv").config();
-const port = 5000||process.env.PORT;
+const port = process.env.PORT||5000;
 
 let options = {
   root: __dirname,
