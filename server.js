@@ -1,5 +1,4 @@
 //Objectif : Recuprer le Blob d'un fichier à partir de son URL(chemin)
-
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -22,6 +21,5 @@ app.get("/result", (req, res) => {
 });
 
 
-console.log(path.join(__dirname));
 
 app.listen(port, () => console.log("Listenning on the", port));
