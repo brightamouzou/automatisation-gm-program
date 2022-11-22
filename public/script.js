@@ -384,8 +384,11 @@ console.log(month.monthSundays);
 
 const screenshotTarget = document.querySelector(".program");
 const generate = document.getElementById("generate");
+const header = document.querySelector(".header").cloneNode(true);
 
 generate.onclick = (e) => {
+  screenshotTarget.insertAdjacentElement("afterbegin", header);
+
   // spriritualAwakeningFilter.classList.add("invisible");
   html2canvas(screenshotTarget).then((canvas) => {
     const base64image = canvas.toDataURL("image/png");
@@ -395,21 +398,22 @@ generate.onclick = (e) => {
     const download = document.querySelector(".downloadImg");
     
     if(actualPreview){
+      screenshotTarget.removeChild(header);
       document.body.removeChild(actualPreview);
       document.body.removeChild(download);
     }
 
-      
+    
 
     const a=document.createElement('a');
     a.href=base64image;
     const img=new Image();
     img.src=base64image;
     img.id="preview";
-    a.classList.add("btn", "btn-primary", "d-block", "my-5", "m-auto","downloadImg")
-    a.download=`programme_${monthNumbersCorrespondance[month.monthNumber]}`.toLocaleLowerCase();
+    a.classList.add("btn", "btn-primary","text-center", "d-block", "my-5", "m-auto","downloadImg")
+    a.download=`programme_${monthNumbersCorrespondance[month.monthNumber]}_${month.year}`.toLocaleLowerCase();
 
-    a.innerText="Télécharger le prgramme"
+    a.innerText="Télécharger le programme"
     
     a.style.width="min-content"
 

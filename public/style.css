@@ -73,6 +73,10 @@ table{
 
 }
 
+.font-12{
+    font-size: 12px;
+}
+
 .mb-5{
     margin-bottom: 15px;
 }
@@ -141,6 +145,10 @@ textarea{
     margin-bottom: 15px;
 }
 
+.my-10{
+    margin: 30px auto;
+}
+
 table{
     margin: auto;
     border-collapse: collapse;
@@ -149,6 +157,11 @@ table{
 .d-block{
     display: block;
 }
+
+.mb-10{
+    margin-bottom: 30px;
+}
+
 tr.divider{
     /* background: rgb(248, 176, 43); */
     /* height: 3px; */
